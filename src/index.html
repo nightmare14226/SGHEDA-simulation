@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulation</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulation</title>
+  <link rel="stylesheet" href="./style.css" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css" rel="stylesheet" />
 </head>
+
 <body>
-    <canvas class="webgl"></canvas>
-    <script type="module" src="./script.js"></script>
+
+  <!--Main Navigation-->
+  <header>
+    <!-- Sidebar -->
+    <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse">
+      <div class="position-sticky">
+        <div class="list-group list-group-flush mx-3 mt-4">
+          
+          <!-- Collapse 1 -->
+          <a class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-mdb-toggle="collapse"
+            href="#collapseExample1" aria-expanded="true" aria-controls="collapseExample1">
+            <i class="fas fa-angle-right fa-fw me-3"></i><span>Network</span>
+          </a>
+          <!-- Collapsed content -->
+          <ul id="collapseExample1" class="collapse list-group list-group-flush">
+            <li class="list-group-item py-1">
+              <a href="#" class="blacktext" id="starlink">Starlink</a>
+            </li>
+            <li class="list-group-item py-1">
+              <a href="#" class="blacktext" id="wap">Wireless Access Point</a>
+            </li>
+            <li class="list-group-item py-1">
+              <a href="#" class="blacktext" id="sensor">Sensors</a>
+            </li>
+          </ul>
+          <!-- Collapse 1 -->
+
+          <!-- Collapse 2 -->
+          <a class="list-group-item list-group-item-action py-2 ripple" aria-current="true" data-mdb-toggle="collapse"
+            href="#collapseExample2" aria-expanded="true" aria-controls="collapseExample2">
+            <i class="fas fa-angle-right fa-fw me-3"></i><span>HX</span>
+          </a>
+          <!-- Collapsed content -->
+          <ul id="collapseExample2" class="collapse list-group list-group-flush">
+            <li class="list-group-item py-1">
+              <a href="#" class="blacktext" id="loop">GHX Loop</a>
+            </li>
+            <li class="list-group-item py-1">
+              <a href="#" class="blacktext" id="campus">Campus Loop</a>
+            </li>
+          </ul>
+          <!-- Collapse 2 -->
+        </div>
+      </div>
+    </nav>
+    <!-- Sidebar -->
+  </header>
+  <!--Main Navigation-->
+
+  <!-- <div style="background-color: orange; width: 250px; height: 100vh;"></div> -->
+  <canvas class="webgl"></canvas>
+  <script type="module" src="./script.js"></script>
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.js"></script>
 </body>
+
 </html>
