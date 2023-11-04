@@ -163,7 +163,7 @@ const bloomComposer = new EffectComposer(renderer, target);
 bloomComposer.renderToScreen = true;
 bloomComposer.addPass(renderScene);
 bloomComposer.addPass(bloomPass);
-bloomComposer.addPass(smaaPass);
+// bloomComposer.addPass(smaaPass);
 
 /**
  * Models
@@ -193,7 +193,7 @@ gltfLoader.load("/models/main.glb", (gltf) => {
     if (child.name == "Barrel") barrel = child;
     if (child.name == "Miner_Port") miner_port = child;
     try {
-      child.material.transparent = true;
+      // child.material.transparent = true;
     } catch { }
   });
   scene.add(model);
@@ -316,10 +316,10 @@ const animate = () => {
   orbitControls.update();
 
   // Render Scene
-  // renderer.render(scene, camera);
+  renderer.render(scene, camera);
 
   // Bloom
-  bloomComposer.render();
+  // bloomComposer.render();
 
   // Call animate again on the next frame
   window.requestAnimationFrame(animate);
